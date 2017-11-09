@@ -16,9 +16,6 @@ EXPOSE 80
 
 WORKDIR /srv/nodejs
 
-### entrypoint
-
-chmod 644 && npm start
 
 ## run container
 

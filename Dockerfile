@@ -23,6 +23,4 @@ WORKDIR /srv/nodejs
 VOLUME ["/srv/nodejs"]
 EXPOSE 80
 
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod a+rx /entrypoint.sh
-ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
+CMD ["npm", "start"]
