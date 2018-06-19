@@ -12,7 +12,8 @@ RUN wget -O- https://raw.githubusercontent.com/aliyun-node/tnvm/master/install.s
  source /root/.tnvm/tnvm.sh && \
  tnvm install alinode-v3.8.0 && \
  tnvm use alinode-v3.8.0 && \
- npm install -g cnpm --registry=https://registry.npm.taobao.org
+ npm install -g cnpm --registry=https://registry.npm.taobao.org && \
+ cnpm install agentx -g
 
 
 ENV TNVM_RC_VERSION alinode-v3.8.0
